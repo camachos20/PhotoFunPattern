@@ -5,7 +5,7 @@
     android:id="@+id/activity_photo_fun"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="edu.up.cs371.epp.photofun.PhotoFun"
+    tools:context="edu.up.cs371.epp.photofun.PhotoFunPattern"
     android:orientation="vertical">
 
     <LinearLayout
@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            app:srcCompat="@drawable/olivia_small"
+            app:srcCompat="@drawable/olivia50noise"
             android:layout_weight="1" />
 
         <ImageView

@@ -24,6 +24,7 @@ public class BrightnessFilter extends PhotoFilter {
     * @return a new Pixel in which each of the RGB components has been increased
     */
     public int transformPixel(int inPixel) {
+
         int red = constrain(Color.red(inPixel) + ADJUSTMENT);
         int green = constrain(Color.green(inPixel) + ADJUSTMENT);
         int blue = constrain(Color.blue(inPixel) + ADJUSTMENT);
