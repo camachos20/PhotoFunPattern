@@ -55,16 +55,16 @@ public abstract class PhotoFilter {
 
         for (int w = 1; w < width-1; w++) {
             for (int h = 1; h < height-1; h++) {
-                int inPixel0 = inBmp.getPixel(w-1,h-1);
-                int inPixel1 = inBmp.getPixel(w,h-1);
-                int inPixel2 = inBmp.getPixel(w+1,h-1);
-                int inPixel3 = inBmp.getPixel(w-1,h);
-                int inPixel4 = inBmp.getPixel(w,h);
-                int inPixel5 = inBmp.getPixel(w+1,h);
-                int inPixel6 = inBmp.getPixel(w-1,h+1);
-                int inPixel7 = inBmp.getPixel(w,h+1);
-                int inPixel8 = inBmp.getPixel(w+1,h+1);
-                int outPixel = transformPixel(inPixel0,inPixel1,inPixel2,inPixel3,inPixel4,inPixel5,inPixel6,inPixel7,inPixel8);
+                int p0 = inBmp.getPixel(w-1, h-1);
+                int p1 = inBmp.getPixel(w, h-1);
+                int p2 = inBmp.getPixel(w+1, h-1);
+                int p3 = inBmp.getPixel(w-1, h);
+                int p4 = inBmp.getPixel(w, h);
+                int p5 = inBmp.getPixel(w+1, h);
+                int p6 = inBmp.getPixel(w-1, h+1);
+                int p7 = inBmp.getPixel(w, h+1);
+                int p8 = inBmp.getPixel(w+1, h+1);
+                int outPixel = transformPixel(p0, p1, p2, p3, p4, p5, p6, p7, p8);
                 newBmp.setPixel(w, h, outPixel);
             }
         }
